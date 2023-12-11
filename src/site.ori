@@ -1,0 +1,8 @@
+{
+  public = @tree/merge(
+    {
+      assets
+    }
+    @map(pages, page.orit)
+  )
+}

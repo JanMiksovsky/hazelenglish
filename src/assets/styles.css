@@ -1,0 +1,123 @@
+html {
+  min-height: 100%;
+}
+
+body {
+  background-color: rgb(56, 56, 59);
+  background-position: 50% 50%;
+  background-size: cover;
+  color: white;
+  font-family: "aktiv-grotesk", Helvetica, Arial, sans-serif;
+  font-size: 16px;
+  -webkit-font-smoothing: antialiased;
+  margin: 0;
+  padding: 2vw 4vw;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+img {
+  display: block;
+  max-width: 100%;
+}
+
+p {
+  line-height: 1.8em;  
+}
+
+h1,
+h2,
+h3 {
+  margin: 2rem 0;
+  text-align: center;
+}
+
+h1 {
+  font-size: calc((4 - 1) * 1.2vw + 1rem);
+  line-height: calc(1.4 * (1 + (1 - 4)/25));
+  margin-top: 8rem;
+}
+
+h2 {
+  font-size: calc((2.8 - 1) * 1.2vw + 1rem);
+  line-height: calc(1.4 * (1 + (1 - 2.2)/25));
+  margin-top: 7rem;
+}
+
+h3 {
+  font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+  margin-top: 4rem;
+}
+
+header {
+  display: flex;
+  gap: 2.6vw;
+  line-height: 1.8em;
+  padding-bottom: 2vw;
+}
+
+header a {
+  border-bottom: 1px solid transparent;
+  padding: calc(1.6px + 0.1em) 0;
+}
+
+header a.current {
+  border-bottom: 1px solid white;
+}
+
+article {
+  display: grid;
+  justify-items: center;
+  padding: 6.6vmax 0;
+}
+
+section {
+  width: 75%;
+}
+
+details {
+  margin: 1rem 0;
+}
+
+summary {
+  cursor: pointer;
+  font-size: calc((2.2 - 1) * 1.2vw + 1rem);
+  font-weight: bold;
+  line-height: 1.3328;
+  list-style: none;
+  margin-bottom: 1rem;
+}
+summary::before {
+  content: "+ ";
+  font-size: larger;
+}
+
+div.spacer {
+  height: 100px;
+}
+
+div.buttonContainer {
+  padding: 38px 0;
+  text-align: center;
+}
+
+a.button {
+  border-radius: 300px;
+  border: 2px solid white;
+  display: inline-block;
+  font-size: calc((1 - 1) * 1.2vw + 1rem);
+  letter-spacing: .02em;
+  line-height: normal;
+  /* Our copy of Aktiv Grotest has a weird line height. */
+  /* padding: 1.3rem 2.171rem; */
+  padding: 0.9rem 2.171rem 0.7rem;
+  transition: 0.1s background-color linear, 0.1s color linear;
+}
+
+a.button:hover {
+  background: #fff;
+  color: #929090;
+}

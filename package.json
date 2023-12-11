@@ -1,0 +1,11 @@
+{
+  "name": "hazelenglish",
+  "type": "module",
+  "dependencies": {
+    "@weborigami/origami": "0.0.37"
+  },
+  "scripts": {
+    "build": "ori @copy src/site.ori/public, @files/build",
+    "start": "ori @serve @watch src, =@debug site.ori/public"
+  }
+}
