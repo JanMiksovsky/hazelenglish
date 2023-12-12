@@ -87,9 +87,14 @@ summary {
   font-size: calc((2.2 - 1) * 1.2vw + 1rem);
   font-weight: bold;
   line-height: 1.3328;
-  list-style: none;
+  list-style: none; /* Remove triangle in most browsers */
   margin-bottom: 1rem;
 }
+/* Remove the triangle in Safari */
+summary::-webkit-details-marker {
+  display: none;
+}
+/* Add the + icon */
 summary::before {
   content: "+ ";
   font-size: larger;
