@@ -9,11 +9,7 @@
   </head>
   <body {{ @if _/background, =`style="background-image: url({{ _/background }});"` }}>
     <header>
-      <a href="/" {{ @if @equals(_/current, "index.html"), 'class="current"' }}>Home</a>
-      <a href="live.html" {{ @if @equals(_/current, "live.html"), 'class="current"' }}>Live</a>
-      <a href="music.html" {{ @if @equals(_/current, "music.html"), 'class="current"' }}>Music</a>
-      <a href="lyrics.html" {{ @if @equals(_/current, "lyrics.html"), 'class="current"' }}>Lyrics</a>
-      <a href="https://hazel-english.lnk.to/shopWE">Shop</a>
+      {{ areaLinks.orit({ current: _/fileName, links: areas.yaml }) }}
     </header>
     <article>
       <section>

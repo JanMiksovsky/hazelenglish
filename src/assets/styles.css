@@ -64,7 +64,7 @@ header a {
   padding: calc(1.6px + 0.1em) 0;
 }
 
-header a.current {
+header a[aria-current] {
   border-bottom: 1px solid white;
 }
 

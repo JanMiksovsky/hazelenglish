@@ -1,0 +1,10 @@
+{{
+  @with(
+    { current: _/current },
+    =@map(_/links, =linkCurrent.orit({
+      href: _/href
+      text: _/text
+      current
+    }))
+  )
+}}
