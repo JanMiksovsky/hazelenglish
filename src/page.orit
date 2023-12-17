@@ -9,7 +9,7 @@
   </head>
   <body {{ @if _/background, =`style="background-image: url({{ _/background }});"` }}>
     <header>
-      {{ areaLinks.orit({ current: _/fileName, links: areas.yaml }) }}
+      {{ areaLinks.orit({ currentTitle: _/title, links: areas.yaml }) }}
     </header>
     <article>
       <section>

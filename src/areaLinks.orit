@@ -1,10 +1,10 @@
 {{
   @with(
-    { current: _/current },
+    { currentTitle: _/currentTitle },
     =@map(_/links, =linkCurrent.orit({
       href: _/href
       text: _/text
-      current
+      currentTitle
     }))
   )
 }}

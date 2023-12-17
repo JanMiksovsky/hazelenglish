@@ -1,7 +1,7 @@
 <a {{
   @if _/href, =`href="{{ _/href }}"`
 }}{{
-  @if @equals(_/href, _/current), ` aria-current="page"`
+  @if @equals(_/text, _/currentTitle), ` aria-current="page"`
 }}>{{
   _/text
 }}</a>
