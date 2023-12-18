@@ -5,7 +5,7 @@
     "@weborigami/origami": "https://gitpkg.now.sh/GraphOrigami/origami/origami?2c36d80e"
   },
   "scripts": {
-    "build": "ori @copy src/site.ori/public, @files/build",
-    "start": "ori @serve @watch src, =@debug site.ori/public"
+    "build": "ori @copy src/site.ori, @files/build",
+    "start": "ori @serve @watch src, =@debug site.ori"
   }
 }
