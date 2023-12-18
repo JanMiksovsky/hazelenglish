@@ -1,6 +1,4 @@
 @tree/merge(
-  {
-    assets: src/assets
-  }
+  { assets }
   @map(pages, page.orit)
 )
