@@ -2,7 +2,7 @@
   "name": "hazelenglish",
   "type": "module",
   "dependencies": {
-    "@weborigami/origami": "https://gitpkg.now.sh/GraphOrigami/origami/origami?2c36d80e"
+    "@weborigami/origami": "0.0.38"
   },
   "scripts": {
     "build": "ori @copy src/site.ori, @files/build",
